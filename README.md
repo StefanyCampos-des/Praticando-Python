@@ -1,8 +1,21 @@
-- Praticando Python 🐍
-- Repositório criado para armazenar exercícios, projetos e códigos de estudo focados em desenvolver habilidades práticas em Python.
+- 🐍 Praticando Python - 
+Repositório com exercícios práticos para você dominar Python na prática.
 
-- Conteúdo Atual
-- 📌 Cálculo de aposentadoria — Exercício para praticar funções, condicionais, manipulação de dicionários, tratamento de erros, cálculo com datas e formatação de saída.
-- 🧮 Calculadora de IMC — em plamejamento
-- 🔐 Sistema de login simples — em plamejamento
-- ...e muitos outros códigos que reforçam fundamentos e ajudam a crescer como programador Python.
+- 📚 Conteúdo -
+
+🧮 Cálculo de aposentadoria: funções, condicionais, dicionários, tratamento de erros e datas.
+
+⚖ Calculadora de IMC: lógica básica, matemática e condicionais.
+
+🔐 Sistema de login: loops, autenticação e controle de fluxo.
+
+📂 Manipulação de dicionários: estruturas e iteração.
+
+- 💡 Por que usar? -
+Código real para aprender fazendo e fixar conceitos essenciais.
+
+🛠 Tecnologias
+Python 3, funções, exceções, dicionários, datetime, entrada/saída e controle de fluxo.
+
+🚀 Como usar
+Clone, estude, rode localmente e customize para aprender de verdade.
