@@ -6,11 +6,9 @@ Repositório com exercícios práticos para você dominar Python na prática.
 
 🧮 Cálculo de aposentadoria: funções, condicionais, dicionários, tratamento de erros e datas.
 
-⚖ Calculadora de IMC: lógica básica, matemática e condicionais.
+⚖ Calculadora de IMC: lógica básica, matemática e condicionais. (em andamento)
 
-🔐 Sistema de login: loops, autenticação e controle de fluxo.
-
-📂 Manipulação de dicionários: estruturas e iteração.
+🔐 Sistema de login: loops, autenticação e controle de fluxo. (em andamento)
 
 - 💡 Por que usar? -
 Código real para aprender fazendo e fixar conceitos essenciais.
