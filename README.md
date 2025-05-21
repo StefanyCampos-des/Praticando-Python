@@ -13,8 +13,8 @@ Repositório com exercícios práticos para você dominar Python na prática.
 - 💡 Por que usar? -
 Código real para aprender fazendo e fixar conceitos essenciais.
 
-🛠 Tecnologias
+🛠 Tecnologias - 
 Python 3, funções, exceções, dicionários, datetime, entrada/saída e controle de fluxo.
 
-🚀 Como usar
+🚀 Como usar - 
 Clone, estude, rode localmente e customize para aprender de verdade.
