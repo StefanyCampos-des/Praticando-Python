@@ -1,4 +1,5 @@
-- 🐍 Praticando Python - 
+🐍 Praticando Python
+
 Repositório com exercícios práticos para você dominar Python na prática.
 
 - 📚 Conteúdo -
