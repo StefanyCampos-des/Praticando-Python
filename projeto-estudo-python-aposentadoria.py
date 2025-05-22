@@ -3,31 +3,26 @@ from datetime import datetime  # Importa módulo para lidar com datas e horas
 def linha(tam=50): #linhas
     print('-=' *30) 
 
-def calcular_idade(ano_nascimento):
-    # Calcula a idade atual
+def calcular_idade(ano_nascimento): # calcula a idade atual
     return datetime.now().year - ano_nascimento
 
-def calcular_tempo_contribuicao(ano_contratacao):
-    # Calcula o tempo de contribuição 
+def calcular_tempo_contribuicao(ano_contratacao): # calcula o tempo de contribuição 
     return datetime.now().year - ano_contratacao
 
-def calcular_anos_para_aposentar(tempo_contribuicao, sexo):
-    # Define o tempo necessário para aposentadoria, diferente para homem e mulher
+def calcular_anos_para_aposentar(tempo_contribuicao, sexo): # define o tempo necessário para apos !0 de m e f
     if sexo.lower() == 'f':
         tempo_necessario = 30
     else:
         tempo_necessario = 35
 
-    # Calcula o tempo restante para atingir o tempo necessário, nunca negativo
-    restante = tempo_necessario - tempo_contribuicao
+    restante = tempo_necessario - tempo_contribuicao  # calcula o tempo restante para atingir o tempo necessário
     return max(restante, 0)
 
-def coletar_dados():
-    # Coleta dados do usuário via input e faz tratamento básico de erros
+def coletar_dados(): #  faz tratamento básico de erros
     dados = {}
 
-    dados['nome'] = input("Nome completo: ").strip()  # Remove espaços extras
-    dados['sexo'] = input("Sexo (M/F): ").strip().lower()  # Padroniza para minusculo
+    dados['nome'] = input("Nome completo: ").strip()  # remove espaços extras
+    dados['sexo'] = input("Sexo (M/F): ").strip().lower()  # minusculo
 
     try:
         dados['ano_nascimento'] = int(input("Ano de nascimento: "))
@@ -35,12 +30,11 @@ def coletar_dados():
         dados['registro'] = str(input('Esta trabalhando atualmente? (S/N): ')).strip().lower()
     except ValueError:
         print("Entrada inválida. Tente novamente.")
-        return None  # Sai da função 
+        return None  # sai da função 
 
     return dados
 
-def mostrar_resultado(dados):
-    # Calcula e imprime o resultado da simulação com base nos dados coletados
+def mostrar_resultado(dados): # imprime o resultado da simulação com base nos dados coletados
     idade = calcular_idade(dados['ano_nascimento'])
     tempo_contrib = calcular_tempo_contribuicao(dados['ano_contratacao'])
     anos_faltando = calcular_anos_para_aposentar(tempo_contrib, dados['sexo'])
@@ -54,12 +48,10 @@ def mostrar_resultado(dados):
     print("\n📌 Observação: O tempo real de contribuição pode variar conforme vínculos anteriores em outras empresas e registros no INSS.")
     linha()  
 
-def main():
-    # controla o fluxo do programa
-    dados_usuario = coletar_dados()  # Recebe dados do usuário
-    if dados_usuario:                 # Se dados forem válidos, mostra resultado
+def main(): # controla o fluxo do programa
+    dados_usuario = coletar_dados()  # recebe dados do usuário
+    if dados_usuario:
         mostrar_resultado(dados_usuario)
 
-if __name__ == "__main__":
-    # Garante que o programa só execute o main se for o script principal rodando
+if __name__ == "__main__": # mantem script principal rodando
     main()
