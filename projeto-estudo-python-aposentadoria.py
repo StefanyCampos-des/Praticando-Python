@@ -20,7 +20,6 @@ def calcular_anos_para_aposentar(tempo_contribuicao, sexo): # define o tempo nec
 
 def coletar_dados(): #  faz tratamento básico de erros
     dados = {}
-
     dados['nome'] = input("Nome completo: ").strip()  # remove espaços extras
     dados['sexo'] = input("Sexo (M/F): ").strip().lower()  # minusculo
 
@@ -31,9 +30,7 @@ def coletar_dados(): #  faz tratamento básico de erros
     except ValueError:
         print("Entrada inválida. Tente novamente.")
         return None  # sai da função 
-
     return dados
-
 def mostrar_resultado(dados): # imprime o resultado da simulação com base nos dados coletados
     idade = calcular_idade(dados['ano_nascimento'])
     tempo_contrib = calcular_tempo_contribuicao(dados['ano_contratacao'])
@@ -47,7 +44,6 @@ def mostrar_resultado(dados): # imprime o resultado da simulação com base nos 
     print(f"⏳ Faltam {anos_faltando} anos para aposentadoria.")
     print("\n📌 Observação: O tempo real de contribuição pode variar conforme vínculos anteriores em outras empresas e registros no INSS.")
     linha()  
-
 def main(): # controla o fluxo do programa
     dados_usuario = coletar_dados()  # recebe dados do usuário
     if dados_usuario:
